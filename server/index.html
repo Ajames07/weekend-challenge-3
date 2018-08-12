@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +11,20 @@
     <script src="public/scripts/client.js"></script>
     <title>Document</title>
 </head>
-<body>
-    
+
+<body ng-app="myApp">
+    <div class="container" ng-controller="TaskController as tc">
+        <header>
+            <h1>Weekend Challege #3</h1>
+        </header>
+        <form gn-submit="tc.taskManager">
+            <input type="text" ng-model="tc.taskInput" placeholder="Task">
+            <input type="text" ng-model="tc.taskInput" placeholder="Date assigned">
+            <input type="text" ng-model="tc.taskInput" placeholder="Due date">
+            <input type="text" ng-model="tc.taskInput" placeholder="Notes">
+            <button>Submit Task</button>
+        </form>
+    </div>
 </body>
+
 </html>

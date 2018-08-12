@@ -17,3 +17,13 @@ mongoose.connection.on('open', () => {
 mongoose.connection.on('error', (error) => {
     console.log('ERROR CONNECTING TO MONGO', error);
 });//end mongoose error
+
+const Schema = mongoose.Schema;
+const TaskSchema = new Schema ({
+    task: {type: String},
+    date: {type: String},
+    due: {type: String},
+    notes: {type: String}
+});//end schema
+
+const task = mongoose.model('tasks', TaskSchema);
