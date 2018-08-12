@@ -5,9 +5,9 @@
 
 Requirements:
 
--[] create HTML boilerplate
--[] source in Vendors specifically Angular.JS
--[] npm init and install express
+-[x] create HTML boilerplate
+-[x] source in Vendors specifically Angular.JS
+-[x] npm init and install express
 -[] establish MongoDB
 -[] whenever a task is created, store it inside of MongoDB
 -[] each task should have an option to 'Complete' or 'Delete'.
