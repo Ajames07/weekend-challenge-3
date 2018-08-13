@@ -17,13 +17,27 @@
         <header>
             <h1>Weekend Challege #3</h1>
         </header>
-        <form gn-submit="tc.taskManager">
-            <input type="text" ng-model="tc.taskInput" placeholder="Task">
-            <input type="text" ng-model="tc.taskInput" placeholder="Date assigned">
-            <input type="text" ng-model="tc.taskInput" placeholder="Due date">
-            <input type="text" ng-model="tc.taskInput" placeholder="Notes">
+        <br>
+        <div>
+            <h2>Create Task</h2>
+        </div>
+        <form ng-submit="tc.taskManager(tc.taskInput)">
+            <input type="text" ng-model="tc.taskInput.task" placeholder="Task">
             <button>Submit Task</button>
         </form>
+        <br>
+        <div>
+            <h2>Task Listing</h2>
+            <table>
+                <thead>
+                    <th>Task</th>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="duty in tc.tasks"></tr>
+                    <td>{{duty.task}}</td>
+                </tbody>
+            </table>
+        </div>
     </div>
 </body>
 

@@ -8,7 +8,7 @@ Requirements:
 -[x] create HTML boilerplate
 -[x] source in Vendors specifically Angular.JS
 -[x] npm init and install express
--[] establish MongoDB
+-[x?] establish MongoDB
 -[] whenever a task is created, store it inside of MongoDB
 -[] each task should have an option to 'Complete' or 'Delete'.
 -[] when a task is complete, its visual representation should change on the front end and the complete option checked off.(for example, the background of the task container could change from gray to green. ng-class will come in handy for this part).
