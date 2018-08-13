@@ -8,8 +8,6 @@ myApp.controller('TaskController', function ($http) {
 
     vm.tasks = [];
 
-
-
     vm.taskToAdd = function () {
         objTask = {
             task: vm.taskInput.task
